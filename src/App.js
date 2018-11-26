@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Modal from "./Components/Portals/Modal";
 import ErrorBoundary from './Components/ErrorBoundaries/ErrorBoundary';
+import FragmentComponent from './Components/FragmentComponent/FragmentComponent';
 
 class App extends Component {
   constructor(props) {
@@ -36,6 +37,8 @@ class App extends Component {
               Modal is open!
             </div>
           </Modal>
+          <h1>Fragments</h1>
+          <FragmentComponent/>
         </header>
       </ErrorBoundary>
       </div>
