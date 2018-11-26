@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Modal from "./Components/Portals/Modal";
+import ErrorBoundary from './Components/ErrorBoundaries/ErrorBoundary';
 
 class App extends Component {
   constructor(props) {
@@ -14,6 +15,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+      <ErrorBoundary>
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
@@ -35,6 +37,7 @@ class App extends Component {
             </div>
           </Modal>
         </header>
+      </ErrorBoundary>
       </div>
     );
   }
